@@ -5,7 +5,7 @@ export class Adagram {
     console.log('Hurray!');
   }
 
-  drawLetters(){
+  static drawLetters(){
     const letterPool = {
       'A': 9, 
       'B': 2, 
@@ -54,7 +54,7 @@ export class Adagram {
     return handPool;
   };
 
-  usesAvailableLetters(input, lettersInHand) {
+  static usesAvailableLetters(input, lettersInHand) {
     
     const handPool = _.cloneDeep(lettersInHand);
     const checkingArray = [];
@@ -70,7 +70,7 @@ export class Adagram {
   };
 
 
-  scoreWord(word){
+  static scoreWord(word){
     const letterScore = {
       'A': 1, 
       'B': 3, 
@@ -110,7 +110,7 @@ export class Adagram {
     return score;
   };
 
-  highestScoreFrom = (words) => {
+  static highestScoreFrom = (words) => {
   
     let highestScore = this.scoreWord(words[0]);
 
