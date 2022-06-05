@@ -1,9 +1,6 @@
 import _ from "lodash";
 
 export class Adagram {
-  constructor() {
-    console.log('Hurray!');
-  }
 
   static drawLetters(){
     const letterPool = {
